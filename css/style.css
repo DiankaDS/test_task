@@ -1,0 +1,163 @@
+body{
+	width: 80%;
+	min-width: 350px;
+	margin: 0 auto;
+}
+
+/* Header */
+
+header {
+	height: 80px;
+    background: #008B8B;
+    color: #191970;
+}
+
+header h1 {
+	padding: 0px 10px 0px 30px;
+	float: left;
+}
+
+header nav {
+	float: right;
+	padding: 25px 30px 0px 10px;
+	cursor: pointer;
+}
+
+header a {
+	text-decoration: none;
+	margin: 10px;
+	font-size: 24px;
+	color: #191970;
+}
+
+header a:hover {
+	color: #FFFFFF;
+}
+
+/* Main */
+
+#text{
+	text-align: center;
+	color: #6E6E6E;
+	min-height: 200px;
+	padding: 80px;
+}
+
+/* Footer */
+
+footer {
+	height: 60px;
+	background: #E5E5E5;
+}
+
+footer #copyright{
+	color: #008B8B;
+	padding: 20px 0px 0px 20px;
+	font-size: 12px;
+}
+
+/* Popup */
+
+.popup{
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+z-index: 100;
+display: none;
+}
+
+.popup.active{
+display: block;
+}
+
+.popupBox{
+position: absolute;
+min-width:400px;
+min-height: 200px;
+left: 50%;
+top: 50%;
+background: #fff;
+-moz-transform: translateX(-50%) translateY(-50%); /* Для Firefox */
+-ms-transform: translateX(-50%) translateY(-50%); /* Для IE */
+-webkit-transform: translateX(-50%) translateY(-50%); /* Для Safari, Chrome, iOS */
+-o-transform: translateX(-50%) translateY(-50%); /* Для Opera */
+transform: translateX(-50%) translateY(-50%);
+text-align: center;
+padding: 7px;
+}
+
+.error{
+	color: red !important;
+	border: 1px solid red !important;
+}
+.error::-webkit-input-placeholder {color:red; }
+.error::-moz-placeholder          {color:red;}/* Firefox 19+ */
+.error:-moz-placeholder           {color:red;}/* Firefox 18- */
+.error:-ms-input-placeholder      {color:red;}
+
+.message{
+	color: red;
+	padding: 10px;
+}
+
+.loading  > *{
+	visibility: hidden;
+}
+
+.loading{
+	background-image: url(../images/Loading_icon.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+
+.popupBox .button{
+	background-color: #008B8B;
+	margin: 10px 150px 0px 150px;
+	padding: 12px 12px;
+	text-shadow: 1px 2px 2px #000000;
+	font-size: 14px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.popupBox .button:hover {
+	background-color: #20B2AA;
+	cursor: pointer;
+}
+
+.popupBox input{
+	border: 1px solid #008B8B;
+	padding: 12px 10px;
+	width: 238px;
+	font-size: 14px;
+    margin: 2px;
+	color: #6E6E6E;
+}
+
+.popupBox #checkbox{
+	width: 30px;
+	height: 15px;
+}
+
+.popupBox span {
+	color: #6E6E6E;
+}
+
+.popupBox select{
+	border: 1px solid #008B8B;
+	padding: 12px 10px;
+	width: 260px;
+	font-size: 14px;
+    margin: 2px;
+	color: #6E6E6E;
+}
+
+.popupBox p{
+	text-align: left;
+	color: #6E6E6E;
+	padding: 0px 0px 0px 70px;
+}
